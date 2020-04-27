@@ -1,6 +1,8 @@
 # Simple Calculator JS
 Projeto de calculadora simples para aplicação do estudo da linguagem JavaScript.
 
+![Calculator](https://user-images.githubusercontent.com/8833589/80412264-fe8e3200-88a3-11ea-8bb3-2c687203142c.png)
+
 ## Tecnologias Utilizadas
 * HTML
 * CSS
