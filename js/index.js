@@ -64,8 +64,6 @@ function efetuaCalculo(v1, v2, op) {
 }
 
 function registraVariavel(valor, operacao) {
-    console.log(`Cont: ${cont}\nValAnterior: ${valor}`);
-
     if (cont === 0) {
         resultadoAnterior = valor;
         cont++;
