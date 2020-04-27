@@ -80,6 +80,7 @@ function registraVariavel(valor, operacao) {
     }
 }
 
+//Configuração dos eventos de clique
 const tecla1 = document.querySelector("#t1");
 tecla1.addEventListener("click", (e) => {
     registraValorNaTela(tecla1.innerHTML);
@@ -177,3 +178,67 @@ teclaIgual.addEventListener("click", (e) => {
     registraVariavel(parseFloat(visor.value), operadorAtual);
     cont = 0;
 });
+
+// Configuração dos eventos de teclas pressionadas
+function acionaTeclaPressionada() {
+    let tecla = event.keyCode;
+
+    switch (tecla) {
+        case 13:
+            teclaIgual.click();
+            break;
+        case 32:
+            teclaC.click();
+            break;
+        case 42:
+            teclaMultiplicacao.click();
+            break;
+        case 43:
+            teclaAdicao.click();
+            break;
+        case 44:
+            teclaPonto.click();
+            break;
+        case 45:
+            teclaSubtracao.click();
+            break;
+        case 46:
+            teclaPonto.click();
+            break;
+        case 47:
+            teclaDivisao.click();
+            break;
+        case 48:
+            tecla0.click();
+            break;
+        case 49:
+            tecla1.click();
+            break;
+        case 50:
+            tecla2.click();
+            break;
+        case 51:
+            tecla3.click();
+            break;
+        case 52:
+            tecla4.click();
+            break;
+        case 53:
+            tecla5.click();
+            break;
+        case 54:
+            tecla6.click();
+            break;
+        case 55:
+            tecla7.click();
+            break;
+        case 56:
+            tecla8.click();
+            break;
+        case 57:
+            tecla9.click();
+            break;
+    }
+}
+
+document.addEventListener("keypress", acionaTeclaPressionada);
